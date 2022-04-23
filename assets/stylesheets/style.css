@@ -1,5 +1,6 @@
 @import url(components/navbar.css);
-@import url(components/table2.css);
+@import url(components/table.css);
+@import url(components/button.css);
 
 *,
 *::before,
@@ -32,11 +33,17 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
+}
+
+.content-container-flex p, h1 {
+padding-top: 2rem;
 }
 
 .content-container {
   width: 80%;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 .page-frame-content {
@@ -47,7 +54,7 @@ a {
 }
 
 .page-frame-header {
-  background-color: lightblue;
+  background-color: #ffffff;
   padding: 16px;
   border: 1px solid red;
 }
