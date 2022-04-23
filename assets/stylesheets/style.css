@@ -1,5 +1,5 @@
 @import url(components/navbar.css);
-@import url(components/table.css);
+@import url(components/table2.css);
 
 *,
 *::before,
@@ -26,12 +26,17 @@ a {
   display: inline-block;
 }
 
-.content-container {
-  width: 80vw;
+.content-container-flex {
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.content-container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .page-frame-content {
@@ -59,21 +64,21 @@ a {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (max-width: 992px) {
-  .content-container {
+  .content-container-flex {
     width: 700px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (max-width: 768px) {
-  .content-container {
+  .content-container-flex {
     width: 600px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (max-width: 576px) {
-  .content-container {
+  .content-container-flex {
     width: 300px;
   }
 }
