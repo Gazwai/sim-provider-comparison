@@ -8,7 +8,7 @@
 
 .navbar-vanilla a {
   text-decoration: none;
-  color: rgb(40,40,40);
+  color: rgb(40, 40, 40);
   font-size: 20px;
 }
 
@@ -27,6 +27,11 @@
 
 .navbar-vanilla-brand {
   margin: 0;
+  color: black;
+  font-size: 24px;
+}
+.navbar-vanilla-menu {
+  display: flex;
 }
 
 .navbar-vanilla-menu a {
@@ -55,7 +60,7 @@
   background-color: white;
   padding: 16px;
   width: max-content;
-  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
   text-align: right;
   opacity: 0;
   visibility: hidden;
@@ -73,8 +78,15 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (max-width: 576px) {
+  .navbar-vanilla-profile {
+    position: relative;
+    margin: 0;
+  }
+  .navbar-vanilla-logo {
+    margin: 0;
+  }
   .navbar-vanilla-brand {
-    font-size: 24px;
+    display: none;
   }
 
   .navbar-vanilla-menu {
