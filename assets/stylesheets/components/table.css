@@ -22,6 +22,8 @@ h2 {
 .table-wrapper {
   margin: 10px 10px 10px;
   box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: 0 0;
 }
 
 .fl-table {
@@ -32,7 +34,7 @@ h2 {
   border-collapse: collapse;
   width: 100%;
   max-width: 100%;
-  white-space: nowrap;
+  white-space: normal;
   background-color: white;
 }
 
@@ -40,6 +42,7 @@ h2 {
 .fl-table th {
   text-align: center;
   padding: 8px;
+  height: fit-content;
 }
 
 .fl-table td {
@@ -60,10 +63,20 @@ h2 {
 .fl-table tr:nth-child(even) {
   background: #f8f8f8;
 }
+.category {
+  font-weight: bold;
+}
+
+#provider-header {
+  display: none;
+}
 
 /* Responsive */
 
 @media (max-width: 768px) {
+  #first-header {
+    font-size: 0;
+  }
   .fl-table {
     display: block;
     width: 100%;
@@ -95,18 +108,19 @@ h2 {
   .fl-table td,
   .fl-table th {
     padding: 20px 0.625em 0.625em 0.625em;
-    height: 60px;
+    height: 120px;
     vertical-align: middle;
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: auto;
-    width: 120px;
+    width: 160px;
     font-size: 13px;
     text-overflow: ellipsis;
   }
   .fl-table thead th {
     text-align: left;
     border-bottom: 1px solid #f7f7f9;
+    width: 80px;
   }
   .fl-table tbody tr {
     display: table-cell;
@@ -127,5 +141,12 @@ h2 {
   .fl-table tbody td {
     display: block;
     text-align: center;
+  }
+  #category-header {
+    display: none;
+  }
+
+  #provider-header {
+    display: block;
   }
 }
