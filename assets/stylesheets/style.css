@@ -55,9 +55,8 @@ h1 {
 }
 
 .page-frame-header {
-  background-color: #ffffff;
+  background-color: lightblue;
   padding: 16px;
-  border: 1px solid red;
 }
 
 .page-frame-body {
